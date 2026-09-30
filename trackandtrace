@@ -222,7 +222,25 @@
 
   <!-- TAB 1: VERZENDER -->
   <div id="sender" class="tab-content active">
-    <h3>Nieuw Pakket Aanmaken</h3>
+   // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBT7fqujaIXyHz4v3BFu3h8kkNqlKYWg2Y",
+  authDomain: "mijn-track-and-trace.firebaseapp.com",
+  databaseURL: "https://mijn-track-and-trace-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "mijn-track-and-trace",
+  storageBucket: "mijn-track-and-trace.firebasestorage.app",
+  messagingSenderId: "253887698434",
+  appId: "1:253887698434:web:b3a460cfdf35235063391b"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+<h3>Nieuw Pakket Aanmaken</h3>
     <label for="pkg-id">Pakketcode / Referentie</label>
     <input type="text" id="pkg-id" placeholder="Bijv. PKT-1001">
 
